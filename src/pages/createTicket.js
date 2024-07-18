@@ -54,11 +54,11 @@ const CreateTicket = () => {
   }
   const handleGenerateQR = async () => {
     try {
-      const baseUrl = "http://localhost:3000/details/";
+      const baseUrl = "https://ticket-front-1.onrender.com/details/";
       const uniqueValue = generateUniqueValue();
       const qrUrl = baseUrl + uniqueValue;
 
-      // const qrUrl  = `http://localhost:3000/details/${uniqueValue}`;
+      // const qrUrl  = `https://ticket-front-1.onrender.com/details/${uniqueValue}`;
 
       const canvas = await QRCode.toCanvas(qrUrl, {
         width: parseInt(qrSize),
