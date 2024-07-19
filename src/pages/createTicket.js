@@ -54,7 +54,7 @@ const CreateTicket = () => {
   }
   const handleGenerateQR = async () => {
     try {
-      const baseUrl = "https://ticket-front-1.onrender.com/details/";
+      const baseUrl = "https://ticket-front-sand.vercel.app/details/";
       const uniqueValue = generateUniqueValue();
       const qrUrl = baseUrl + uniqueValue;
 
